@@ -1,8 +1,8 @@
 const Contact = () => {
     return (
         <>  
-        <div className="bg-blue-700 p-10">
-            MLEKO
+        <div className="bg-violet-800 p-10 h-screen">
+            MLEKO Kontakt
         </div>
         </>
     );

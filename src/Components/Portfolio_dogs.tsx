@@ -1,8 +1,8 @@
 const Portfolio_dogs = () => {
     return (
         <>  
-        <div className="bg-blue-700 p-10">
-            MLEKO
+        <div className="bg-yellow-600 h-screen p-10">
+            MLEKO ZJECIA PSÓW
         </div>
         </>
     );
