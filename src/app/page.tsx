@@ -1,6 +1,11 @@
 import Hero from "@/Pages/Hero";
-import Footer from "@/Components/Footer";
 import Nav from "@/Components/Nav";
+import Footer from "@/Components/Footer";
+
+import About from "@/Pages/About";
+import Contact from "@/Pages/Contact";
+import Portfolio_dogs from "@/Pages/Portfolio_dogs";
+
 export default function Home() {
   return (
     <>
