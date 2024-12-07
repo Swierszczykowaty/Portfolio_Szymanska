@@ -2,6 +2,7 @@ import "./globals.css";
 import Nav from "@/Components/Nav";
 import Footer from "@/Components/Footer";
 
+
 export default function RootLayout({
   children,
 }: {
