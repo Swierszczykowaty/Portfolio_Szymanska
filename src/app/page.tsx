@@ -1,10 +1,8 @@
-// app/page.tsx
-import Hero from "@/Pages/Hero"; // Zakładam, że Hero jest w folderze "Components"
+export default function HomePage() {
 
-export default function Home() {
   return (
-    <div>
-      <Hero />
-    </div>
+      <div className="bg-gray-800 p-10 h-[500px]">
+        <h1 className="text-white text-4xl">HEROOOOOOOOOO</h1>
+      </div>
   );
 }
