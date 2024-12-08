@@ -3,8 +3,8 @@ import Link from "next/link";
 export default function Nav() {
 
   return (
-    <nav className="fixed ">
-      <div className="flex gap-10 p-10 text-white">
+    <nav className="fixed w-screen  z-50">
+      <div className="flex gap-10 p-10 text-black">
           <Link href="/">
           <div >
             <img className="h-10" src="/logo/karina_logo.png" alt="logo" />
