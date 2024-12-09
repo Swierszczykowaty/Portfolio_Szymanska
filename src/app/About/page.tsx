@@ -1,12 +1,15 @@
 const About = () => {
   return (
     <>
-      <div className=" bg-fuchsia-200 h-full"
-       style={{ height: `calc(100vh - 296px)` }}>
+      <div className=" bg-fuchsia-100 flex items-center py-10"
+       style={{ height: `calc(100vh - 288px)` }}
+       >
         <div className="flex-grow flex justify-center items-center">
-          <div className="flex gap-10">
-            <img className="h-[600px] object-cover" src="/photos/1.webp" alt="" />
-            <div className="text-black bg-fuchsia-300">
+          <div className="flex gap-10 bg-fuchsia-200">
+            <div className="w-1/3">
+              <img className="h-full w-full object-cover" src="/photos/1.webp" alt="" />
+            </div>
+            <div className="text-black bg-fuchsia-300 w-2/3">
               <div className="flex flex-col mb-4">
                 <p className="">O mnie</p>
                 <p className="">Poznajmy się lepiej</p>

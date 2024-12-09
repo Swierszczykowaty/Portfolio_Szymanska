@@ -4,7 +4,7 @@ import { FaSquareFacebook } from "react-icons/fa6";
 const Footer = () => {
     return (
         <>  
-        <div className="bg-white flex flex-col text-slate-400 justify-center h-44 items-center">
+        <div className="bg-white flex flex-col text-slate-400 justify-center h-36 items-center">
             <div className="flex gap-[60px] mb-4">
                 <a 
                     href="https://www.facebook.com/share/19SDkoN7r9/" 

@@ -8,7 +8,7 @@ export default function RootLayout({
 }) {
   return (
     <>
-      <main>
+      <main className="">
         <Wrapper>{children}</Wrapper>
       </main>
       <Footer />
