@@ -6,7 +6,7 @@ type WrapperProps = {
 
 const Wrapper: React.FC<WrapperProps> = ({ children }) => {
   return (
-    <div className="px-4 sm:px-8 lg:px-16 xl:px-24 ">
+    <div className="mx-6 sm:mx-10 md:mx-16 lg:mx-24 xl:mx-32 2xl:mx-72 ">
       {children}
     </div>
   );
