@@ -1,13 +1,17 @@
+import Image from 'next/image';
+
 const About = () => {
   return (
     <>
       <div className="w-full g-fuchsia-100 flex items-center flex-grow"
-       style={{ height: `calc(100vh - 288px)` }}
+       style={{ height: `calc(100vh - 437px)` }}
 
        >
         <div className="flex gap-16 items-center">
             <div className="w-2/5 h-[450px]">
-              <img className="h-full w-full object-cover" src="/photos/1.webp" alt="" />
+              <Image className="h-full w-full object-cover" src="/photos/1.webp" alt="Me"
+               width={400} 
+              height={400}   />
             </div>
             <div className="text-black flex flex-col g-fuchsia-300 w-3/5">
               <div className="flex flex-col">

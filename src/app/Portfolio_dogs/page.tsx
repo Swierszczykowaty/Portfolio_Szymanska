@@ -21,7 +21,7 @@ const photos = [
 const Portfolio_dogs = () => {
   return (
       <>
-        <div className="h-full w-full pt-0 ">
+        <div className="h-full w-full pt- ">
           <PhotoAlbum photos={photos}  columns={3} layout={"columns"} padding={10} spacing={0}
           />
         </div>

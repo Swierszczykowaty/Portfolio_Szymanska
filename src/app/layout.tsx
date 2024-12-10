@@ -1,5 +1,4 @@
 import "./globals.css";
-import Footer from "@/Components/Footer";
 
 import {Host_Grotesk} from 'next/font/google'
 

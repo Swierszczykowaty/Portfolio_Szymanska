@@ -4,8 +4,8 @@ import { FaSquareFacebook } from "react-icons/fa6";
 const Footer = () => {
     return (
         <>  
-        <div className="bg-white flex flex-col text-slate-400 justify-center h-36 items-center">
-            <div className="flex gap-[60px] mb-4">
+        <div className="flex flex-col text-slate-400 justify-center p-20 items-center">
+            <div className="flex gap-[60px] mb-6">
                 <a 
                     href="https://www.facebook.com/share/19SDkoN7r9/" 
                     target="_blank" 
@@ -21,7 +21,7 @@ const Footer = () => {
                     <FaInstagram className="cursor-pointer h-8 w-8" />
                 </a>
             </div>
-            <p className='flex font-thin'>Copyright &copy; {new Date().getFullYear()} Karina Szymańska</p>
+            <p className='flex text-sm font-thin'>Copyright &copy; {new Date().getFullYear()} Karina Szymańska</p>
         </div>
         </>
     );
