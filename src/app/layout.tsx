@@ -6,6 +6,7 @@ import {Host_Grotesk} from 'next/font/google'
 
 const HostGrotesk = Host_Grotesk({
   subsets: ['latin'],
+  style: ["normal", "italic"],
   display: 'swap',
   variable: '--fontHostGrotesk',
 })
