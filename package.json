@@ -10,9 +10,10 @@
   },
   "dependencies": {
     "next": "^15.0.4",
-    "react": "^19.0.0-rc-66855b96-20241106",
-    "react-dom": "^19.0.0-rc-66855b96-20241106",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "react-icons": "^5.4.0",
+    "react-photo-album": "^2.4.1",
     "swiper": "^11.1.15"
   },
   "devDependencies": {
