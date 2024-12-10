@@ -1,5 +1,6 @@
 import Footer from "@/Components/Footer";
 import Wrapper from "@/Components/Wrapper";
+import Nav from "@/Components/Nav";
 
 export default function RootLayout({
   children,
@@ -8,10 +9,11 @@ export default function RootLayout({
 }) {
   return (
     <>
-      <main className="">
+      <main>
+        <Nav/>
         <Wrapper>{children}</Wrapper>
+        <Footer />
       </main>
-      <Footer />
     </>
   );
 }

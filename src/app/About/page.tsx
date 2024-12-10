@@ -5,8 +5,8 @@ const About = () => {
        style={{ height: `calc(100vh - 288px)` }}
 
        >
-        <div className="flex gap-16">
-            <div className="w-2/5 h-[400px]">
+        <div className="flex gap-16 items-center">
+            <div className="w-2/5 h-[450px]">
               <img className="h-full w-full object-cover" src="/photos/1.webp" alt="" />
             </div>
             <div className="text-black flex flex-col g-fuchsia-300 w-3/5">

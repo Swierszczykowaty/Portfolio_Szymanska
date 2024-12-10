@@ -1,5 +1,4 @@
 import "./globals.css";
-import Nav from "@/Components/Nav";
 import Footer from "@/Components/Footer";
 
 import {Host_Grotesk} from 'next/font/google'
@@ -19,7 +18,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${HostGrotesk.variable}`}>
       <body className="font-sans">
-        <Nav/>
         <main>{children}</main>
       </body>
     </html>
