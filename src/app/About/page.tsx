@@ -14,7 +14,7 @@ const About = () => {
                 <p className="">O mnie</p>
                 <p className="">Poznajmy się lepiej</p>
               </div>
-              <p>
+              <p className="">
                 Miłość do psów kiełkowała w moim sercu od najmłodszych lat,
                 natomiast pasja do fotografowania narodziła się po tym jak w
                 moim domu pojawił się mój pierwszy pies - Herman. Zauważyłam,
