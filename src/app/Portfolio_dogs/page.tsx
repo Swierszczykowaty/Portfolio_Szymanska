@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { PhotoAlbum } from "react-photo-album";
 import { IoIosArrowDown } from "react-icons/io";
+import { IoMdClose } from "react-icons/io";
 
 const photos_dogs = [
   { src: '/photos/dogs/1.webp', width: 600, height: 800 },
@@ -55,7 +56,7 @@ const Portfolio_dogs = () => {
         layout="columns"
         padding={10}
         spacing={0}
-        onClick={({ photo, index }) => openModal(photo.src, index)} // Kliknięcie w zdjęcie
+        onClick={({ photo, index }) => openModal(photo.src, index)} 
       />
 
       {/* Modal z powiększonym zdjęciem */}
@@ -81,6 +82,9 @@ const Portfolio_dogs = () => {
             >
               <IoIosArrowDown className='-rotate-90 h-10 w-10'/>
               </button>
+          </div>
+          <div className='bg-red-90 absolute top-0 right-0 m-6 cursor-pointer'>
+            <IoMdClose className='text-white h-12 w-12'/>
           </div>
         </div>
       )}

@@ -12,7 +12,7 @@ const Hero = () => {
   return (
     <>
       <div className="h-[100vh] relative">
-        <div className='fixed top-0 z-50 flex items-center justify-center w-full py-10'>
+        <div className='fixed h- top-0 z-50 flex items-center justify-center w-full py-10 bg-gradient-to-b from-black/80 '>
         <Link href="/">
           <div>
             <Image
@@ -23,39 +23,57 @@ const Hero = () => {
             />
           </div>
         </Link>        </div>
-        <div className="font-semibold absolute z-50 top-1/3 left-60 text-white p-4 b-red-600/20 ">
-          <h1 className='block p-4 text-2xl'>Portfolia:</h1>
+        <div className="font-thin absolute z-50 top-1/3 left-60 text-white p-4 b-red-600/20 ">
+          <div className='flex p-4 items-center gap-4 cursor-default'>
+            <div className='h-2 w-2 bg-white rotate-45'></div>
+            <h1 className='block text-4xl'>Portfolia:</h1>
+          </div>
           <div className='flex flex-col ml-6'>
             <Link
               href="/portfolio_dogs"
-              className={`block cursor-pointer p-2 text-xl`}
+              className={`block cursor-pointer p-2 text-2xl`}
             >
-              <h1>- Pieski</h1>
+              <div className='flex  items-center gap-4'>
+                <div className='h-1 w-1 bg-white rotate-45'></div>
+                <h1>Pieski</h1>
+              </div>
             </Link>
             <Link
               href="/portfolio_people"
-              className={`block cursor-pointer p-2 text-xl`}
+              className={`block cursor-pointer p-2 text-2xl`}
             >
-              <h1>- Ludzie</h1>
+              <div className='flex  items-center gap-4'>
+                <div className='h-1 w-1 bg-white rotate-45'></div>
+                <h1>Ludzie</h1>
+              </div>
             </Link>
             <Link
               href="/portfolio_concerts"
-              className={`block cursor-pointer p-2 text-xl`}
+              className={`block cursor-pointer p-2 text-2xl`}
             >
-              <h1>- Koncerty</h1>
+              <div className='flex  items-center gap-4'>
+                <div className='h-1 w-1 bg-white rotate-45'></div>
+                <h1>Koncerty</h1>
+              </div>
             </Link>
           </div>
           <Link
             href="/about"
-            className={`block cursor-pointer p-4 text-2xl`}
+            className={`block cursor-pointer p-4 text-4xl`}
           >
-            <h1>O mnie</h1>
+            <div className='flex  items-center gap-4'>
+              <div className='h-2 w-2 bg-white rotate-45'></div>
+              <h1>O mnie</h1>
+            </div>
           </Link>
           <Link
             href="/contact"
-            className={`block cursor-pointer p-4 text-2xl`}
+            className={`block cursor-pointer p-4 text-4xl`}
           >
-            <h1>Kontakt</h1>
+            <div className='flex  items-center gap-4'>
+              <div className='h-2 w-2 bg-white rotate-45'></div>
+              <h1>Kontakt</h1>
+            </div>
           </Link>
         </div>
         <Swiper
@@ -67,15 +85,15 @@ const Hero = () => {
           className="h-full w-full "
         >
           <SwiperSlide>
-            <Image src='/photos/1.webp' className="relative object-cover h-full w-full" alt="hero" fill />
+            <Image src='/photos/dogs/8.webp' className="relative object-cover h-full w-full" alt="hero" fill />
             <div className='bg-black/20 w-full h-full absolute z-40'></div>
           </SwiperSlide>
           <SwiperSlide>
-            <Image src='/photos/2.webp' className="relative object-cover h-full w-full" alt="hero" fill />
+            <Image src='/photos/dogs/9.webp' className="relative object-cover h-full w-full" alt="hero" fill />
             <div className='bg-black/20 w-full h-full absolute z-40'></div>          
           </SwiperSlide>
           <SwiperSlide>
-            <Image src='/photos/3.webp' className="relative object-cover h-full w-full" alt="hero" fill />
+            <Image src='/photos/dogs/7.webp' className="relative object-cover h-full w-full" alt="hero" fill />
             <div className='bg-black/20 w-full h-full absolute z-40'></div>
           </SwiperSlide>
         </Swiper>

@@ -11,7 +11,7 @@ const About = () => {
         <div className="w-2/5 h-[450px]">
           <Image
             className="h-full w-full object-cover"
-            src="/photos/1.webp"
+            src="/photos/concert/1.webp"
             alt="Me"
             width={400}
             height={400}
