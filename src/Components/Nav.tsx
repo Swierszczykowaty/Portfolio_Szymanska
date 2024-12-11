@@ -22,7 +22,7 @@ export default function Nav() {
             />
           </div>
         </Link>
-        <div className="flex pt-8 gap-16">
+        <div className="flex pt-8 gap-10 md:gap-16 2xl:gap-[80px] text-nowrap">
           <Link
             href="/about"
             className={`cursor-pointer p-2 ${isConcertPage ? 'text-white' : 'text-stone-900'}`}

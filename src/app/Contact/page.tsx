@@ -31,7 +31,7 @@ const Contact = () => {
             </p>
           </div>
           <div className="flex justify-evenly h-full">
-            <div className="flex items-center">
+            <div className="flex items-center ">
               <FaPhoneAlt className="w-8 h-8 text-stone-800"/>
               <p className="text-2xl ml-4">
                 342 234 234
