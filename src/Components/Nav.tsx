@@ -7,6 +7,7 @@ import Image from 'next/image';
 export default function Nav() {
   const pathname = usePathname();
   const isConcertPage = pathname === "/portfolio_concerts";
+  const isActivePage = (page: string) => pathname === page;
 
   return (
     <nav className="sticky w-full z-50">
@@ -16,8 +17,8 @@ export default function Nav() {
             <Image
               src={isConcertPage ? "/logo/karina_logo_white.png" : "/logo/karina_logo.png"}
               alt="logo"
-              width={240} 
-              height={48}
+              width={280} 
+              height={40}
             />
           </div>
         </Link>

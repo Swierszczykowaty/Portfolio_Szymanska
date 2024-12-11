@@ -13,7 +13,7 @@ export default {
         foreground: "var(--foreground)",
       },
       fontFamily: {
-        sans: ['var(--fontHostGrotesk)', "sans-serif"],
+        sans: ['var(--font-host-grotesk)', "sans-serif"],
       },
       boxShadow: {
         'custom-light': '0 4px 10px rgba(255, 255, 255, 0.2)',
