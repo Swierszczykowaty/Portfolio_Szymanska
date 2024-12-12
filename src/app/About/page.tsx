@@ -6,10 +6,10 @@ const About = () => {
       <div
         className="
           w-full flex items-center flex-grow
-           lg:h-[calc(100vh-445px)]"
+           xl:h-[calc(100vh-445px)]"
       >
-      <div className="flex lg:flex-row flex-col gap-12 lg:gap-16 items-center">
-        <div className="h-[300px] w-full lg:w-2/5 lg:h-[450px]">
+      <div className="flex xl:flex-row flex-col gap-12 xl:gap-16 items-center">
+        <div className="h-[400px] w-full xl:w-2/5 xl:h-[450px]">
           <Image
             className="h-full w-full object-cover"
             src="/photos/concert/1.webp"
@@ -18,7 +18,7 @@ const About = () => {
             height={400}
           />
         </div>
-        <div className="text-black flex flex-col g-fuchsia-300 lg:w-3/5 ">
+        <div className="text-black flex flex-col g-fuchsia-300 xl:w-3/5 ">
           <div className="flex flex-col">
             <p className="italic text-xl font-normal">{aboutData.title}</p>
             <p className="text-2xl font-medium">{aboutData.subtitle}</p>

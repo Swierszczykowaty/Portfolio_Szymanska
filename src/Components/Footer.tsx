@@ -21,7 +21,7 @@ const Footer = () => {
                     <FaInstagram className="cursor-pointer h-8 w-8" />
                 </a>
             </div>
-            <p className='flex text-sm font-thin'>Copyright &copy; {new Date().getFullYear()} Karina Szymańska</p>
+            <p className='flex text-sm font-thin text-nowrap'>Copyright &copy; {new Date().getFullYear()} Karina Szymańska</p>
         </div>
         </>
     );
