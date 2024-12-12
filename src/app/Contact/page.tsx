@@ -29,6 +29,15 @@ const Contact = () => {
         duration: 1.3,
       }
     );
+    gsap.fromTo(
+      ".contactTxt2",
+      { opacity:0, y:-50 },
+      {
+        opacity:1,
+        y:0,
+        duration: 1.3,
+      }
+    );
   },
 []);
   return (
@@ -40,6 +49,7 @@ const Contact = () => {
               className="h-full w-full object-cover bg-center"
               src={Contactphoto}
               alt="Me"
+              placeholder="blur"
             />
           </div>
           <div className="contactTxt text-black flex flex-col">
@@ -52,13 +62,13 @@ const Contact = () => {
             </p>
           </div>
           <div className="flex flex-col sm:flex-row justify-evenly p-6 text-stone-800">
-            <div className="flex items-center justify-center p-2 ">
+            <div className="contactTxt2 flex items-center justify-center p-2 ">
               <FaPhoneAlt className="w-6 h-6 sm:w-8 sm:h-8 "/>
               <p className="text-xl sm:text-2xl ml-4">
                 342 234 234
               </p>
             </div>
-            <div className="flex items-center  justify-center p-2 ">
+            <div className="contactTxt2 flex items-center  justify-center p-2 ">
               <MdEmail className="w-8 h-8 sm:w-10 sm:h-10 "/>
               <p className="text-xl sm:text ml-4 ">
                 karina@szymanksa.pl

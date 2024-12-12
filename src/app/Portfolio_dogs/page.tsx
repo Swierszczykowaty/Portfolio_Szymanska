@@ -6,12 +6,17 @@ import { IoMdClose } from "react-icons/io";
 import Image from 'next/image';
 
 const photos_dogs = [
-  { src: '/photos/dogs/1.webp', width: 600, height: 800 },
-  { src: '/photos/dogs/4.webp', width: 800, height: 600 },
-  { src: '/photos/dogs/3.webp', width: 600, height: 800 },
-  { src: '/photos/dogs/2.webp', width: 800, height: 600 },
-  { src: '/photos/dogs/5.webp', width: 800, height: 600 },
-  { src: '/photos/dogs/6.webp', width: 600, height: 800 },
+  { src: '/photos/dogs/1.webp', width: 600, height: 800, index:1 },
+  { src: '/photos/dogs/4.webp', width: 800, height: 600, index:2 },
+  { src: '/photos/dogs/3.webp', width: 600, height: 800, index:3 },
+  { src: '/photos/dogs/2.webp', width: 800, height: 600, index:4 },
+  { src: '/photos/dogs/5.webp', width: 800, height: 600, index:5 },
+  { src: '/photos/dogs/6.webp', width: 600, height: 800, index:6 },
+  { src: '/photos/dogs/7.webp', width: 800, height: 600, index:7 },
+  { src: '/photos/dogs/8.webp', width: 800, height: 600, index:8 },
+  { src: '/photos/dogs/9.webp', width: 800, height: 600, index:9 },
+
+
 ];
 
 const Portfolio_dogs = () => {
@@ -59,8 +64,8 @@ const Portfolio_dogs = () => {
       />
       {/* Modal z powiększonym zdjęciem */}
       {isModalOpen && (
-        <div className="fixed inset-0 bg-black/80 flex justify-center items-center z-50" onClick={closeModal}>
-          <div className="relative max-w-4xl h-full w-full">
+        <div className="fixed inset-0  bg-black/90 flex justify-center items-center z-50 py-16" onClick={closeModal}>
+          <div className="relative h-full w-full ">
             <Image src={currentImageSrc} fill alt="Zoom" className="w-full h-full object-contain" />
             <button
               onClick={(e) => {

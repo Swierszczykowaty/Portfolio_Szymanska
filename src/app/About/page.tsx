@@ -43,6 +43,7 @@ const About = () => {
             className="h-full w-full object-cover"
             src={Aboutphoto}
             alt="Thatsme"
+            placeholder="blur"
           />
         </div>
         <div className="text-black flex flex-col aboutTxt xl:w-3/5 ">
