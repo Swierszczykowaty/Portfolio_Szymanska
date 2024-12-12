@@ -3,11 +3,27 @@ import Link from "next/link";
 import { IoIosArrowDown } from "react-icons/io";
 import { usePathname } from "next/navigation"; 
 import Image from 'next/image';
-
+import { useEffect } from 'react';
+import gsap from "gsap";
 export default function Nav() {
   const pathname = usePathname();
   const isConcertPage = pathname === "/portfolio_concerts";
   const isActivePage = (page: string) => pathname === page;
+
+
+  useEffect(() => {
+    gsap.fromTo(
+      ".navbar",
+      { opacity:0, x:-50 },
+      {
+        opacity:1,
+        x:0,
+        duration: 1.3,
+        stagger: 0.20,
+      }
+    );
+  },
+[]);
 
   return (
     <nav className="sticky w-full z-50">
@@ -22,7 +38,7 @@ export default function Nav() {
             />
           </div>
         </Link>
-        <div className="flex pt-8 gap-10 md:gap-16 2xl:gap-[80px] text-nowrap">
+        <div className="flex  pt-8 gap-10 md:gap-16 2xl:gap-[80px] text-nowrap">
           <Link
             href="/about"
             className={`cursor-pointer p-2 ${isConcertPage ? 'text-white' : 'text-stone-900'}`}

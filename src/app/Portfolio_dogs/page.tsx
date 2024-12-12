@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { PhotoAlbum } from "react-photo-album";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoMdClose } from "react-icons/io";
+import Image from 'next/image';
 
 const photos_dogs = [
   { src: '/photos/dogs/1.webp', width: 600, height: 800 },
@@ -61,7 +62,7 @@ const Portfolio_dogs = () => {
       {isModalOpen && (
         <div className="fixed inset-0 bg-black/80 flex justify-center items-center z-50" onClick={closeModal}>
           <div className="relative max-w-4xl h-auto w-auto">
-            <img src={currentImageSrc} alt="Zoom" className="w-full h-full object-contain" />
+            <Image src={currentImageSrc} fill alt="Zoom" className="w-full h-full object-contain" />
             <button
               onClick={(e) => {
                 e.stopPropagation();

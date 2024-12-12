@@ -1,25 +1,48 @@
-import { useEffect, useState } from "react";
+'use client';
+import { useEffect } from "react";
 import Image from 'next/image';
 import contactData from '../../text/contact.json';
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import gsap from "gsap";
+import { useGSAP } from '@gsap/react';
+import Contactphoto from '../../../public/photos/concert/1.webp'
+gsap.registerPlugin(useGSAP);
 
 const Contact = () => {
-
+  useGSAP(() => {
+    gsap.fromTo(
+      ".contactPhoto",
+      { opacity:0, x:-50 },
+      {
+        opacity:1,
+        x:0,
+        duration: 1.3,
+      }
+    );
+    gsap.fromTo(
+      ".contactTxt",
+      { opacity:0, x:50 },
+      {
+        opacity:1,
+        x:0,
+        duration: 1.3,
+      }
+    );
+  },
+[]);
   return (
     <>
       <div className="w-full g-fuchsia-100 flex items-center flex-grow sm:h-[calc(100vh-445px)]">
         <div className='flex flex-col w-full h-full gap-10'>
-          <div className='w-full h-[150px] md:h-[250px]'>
+          <div className='contactPhoto w-full h-[150px] md:h-[250px]'>
             <Image
               className="h-full w-full object-cover bg-center"
-              src="/photos/concert/1.webp"
+              src={Contactphoto}
               alt="Me"
-              width={900}
-              height={600}
             />
           </div>
-          <div className="text-black flex flex-col">
+          <div className="contactTxt text-black flex flex-col">
             <div className="flex flex-col">
               <p className="italic text-xl font-normal">{contactData.title}</p>
               <p className="text-2xl font-medium">{contactData.subtitle}</p>
