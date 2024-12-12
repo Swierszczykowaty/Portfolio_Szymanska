@@ -8,11 +8,9 @@ const Contact = () => {
 
   return (
     <>
-      <div className="w-full g-fuchsia-100 flex items-center flex-grow"
-       style={{ height: `calc(100vh - 445px)` }}
-       >
+      <div className="w-full g-fuchsia-100 flex items-center flex-grow sm:h-[calc(100vh-445px)]">
         <div className='flex flex-col w-full h-full gap-10'>
-          <div className='w-full h-[250px]'>
+          <div className='w-full h-[150px] md:h-[250px]'>
             <Image
               className="h-full w-full object-cover bg-center"
               src="/photos/concert/1.webp"
@@ -26,18 +24,18 @@ const Contact = () => {
               <p className="italic text-xl font-normal">{contactData.title}</p>
               <p className="text-2xl font-medium">{contactData.subtitle}</p>
             </div>
-            <p className="text-base mt-6 leading-loose tracking-wide text-justify">
+            <p className="text-[14px] md:text-[16px] text-base mt-6 leading-loose tracking-wide text-justify">
               {contactData.paragraph}
             </p>
           </div>
-          <div className="flex justify-evenly h-full">
-            <div className="flex items-center ">
+          <div className="flex flex-col sm:flex-row justify-evenly h-full">
+            <div className="flex items-center justify-center p-2 ">
               <FaPhoneAlt className="w-8 h-8 text-stone-800"/>
               <p className="text-2xl ml-4">
                 342 234 234
               </p>
             </div>
-            <div className="flex items-center">
+            <div className="flex items-center  justify-center p-2 ">
               <MdEmail className="w-10 h-10 text-stone-800"/>
               <p className="text-2xl ml-4">
                 karina@szymanksa.pl
