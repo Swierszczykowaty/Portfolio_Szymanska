@@ -22,59 +22,52 @@ const Hero = () => {
               height={40}
             />
           </div>
-        </Link>        </div>
-        <div className="font-thin absolute z-50 top-1/3 left-0 sm:left-14 md:left-24 lg:left-50 2xl:left-60 text-white p-4 b-red-600/20 ">
-          <div className='flex p-4 items-center gap-4 cursor-default'>
-            <div className='h-2 w-2 bg-white rotate-45'></div>
-            <h1 className='block text-xl sm:text-4xl'>Portfolia:</h1>
+        </Link>
+        </div>
+        <div className="absolute w-full h-full flex items-end">
+          <div className='tracking-widest z-50 text-xl sm:text-2xl mb-44  text-white p-4 mx-6 sm:mx-10 md:mx-16 lg:mx-24 xl:mx-32 2xl:mx-72'>
+            <Link
+              href="/contact"
+              className={`block cursor-pointer p-4 `}
+            >
+              <div className='flex  items-center gap-4'>
+                <h1>Portfolio Zwierzeta</h1>
+              </div>
+            </Link>
+            <Link
+              href="/contact"
+              className={`block cursor-pointer p-4 `}
+            >
+              <div className='flex  items-center gap-4'>
+                <h1>Portfolio Ludzie</h1>
+              </div>
+            </Link>
+            <Link
+              href="/contact"
+              className={`block cursor-pointer p-4 `}
+            >
+              <div className='flex  items-center gap-4'>
+                <h1>Portfolio Koncerty</h1>
+              </div>
+            </Link>
+            <div className='h-[1px] w-auto mr-32 bg-white m-4'></div>
+            <Link
+              href="/about"
+              className={`block cursor-pointer p-4 `}
+            >
+              <div className='flex  items-center gap-4'>
+                <h1>O mnie</h1>
+              </div>
+            </Link>
+            <Link
+              href="/contact"
+              className={`block cursor-pointer p-4 `}
+            >
+              <div className='flex  items-center gap-4'>
+                <h1>Kontakt</h1>
+              </div>
+            </Link>
           </div>
-          <div className='flex flex-col ml-6'>
-            <Link
-              href="/portfolio_dogs"
-              className={`block cursor-pointer p-2 sm:text-2xl`}
-            >
-              <div className='flex  items-center gap-4'>
-                <div className='h-1 w-1 bg-white rotate-45'></div>
-                <h1>Pieski</h1>
-              </div>
-            </Link>
-            <Link
-              href="/portfolio_people"
-              className={`block cursor-pointer p-2 sm:text-2xl`}
-            >
-              <div className='flex  items-center gap-4'>
-                <div className='h-1 w-1 bg-white rotate-45'></div>
-                <h1>Ludzie</h1>
-              </div>
-            </Link>
-            <Link
-              href="/portfolio_concerts"
-              className={`block cursor-pointer p-2 sm:text-2xl`}
-            >
-              <div className='flex  items-center gap-4'>
-                <div className='h-1 w-1 bg-white rotate-45'></div>
-                <h1>Koncerty</h1>
-              </div>
-            </Link>
-          </div>
-          <Link
-            href="/about"
-            className={`block cursor-pointer p-4 text-xl sm:text-4xl`}
-          >
-            <div className='flex  items-center gap-4'>
-              <div className='h-2 w-2 bg-white rotate-45'></div>
-              <h1>O mnie</h1>
-            </div>
-          </Link>
-          <Link
-            href="/contact"
-            className={`block cursor-pointer p-4 text-xl sm:text-4xl`}
-          >
-            <div className='flex  items-center gap-4'>
-              <div className='h-2 w-2 bg-white rotate-45'></div>
-              <h1>Kontakt</h1>
-            </div>
-          </Link>
         </div>
         <Swiper
           speed={2000}
