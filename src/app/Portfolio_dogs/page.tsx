@@ -55,13 +55,12 @@ const Portfolio_dogs = () => {
           return 3; 
         }}
         layout="columns"
-
         onClick={({ photo, index }) => openModal(photo.src, index)} 
       />
       {/* Modal z powiększonym zdjęciem */}
       {isModalOpen && (
         <div className="fixed inset-0 bg-black/80 flex justify-center items-center z-50" onClick={closeModal}>
-          <div className="relative max-w-4xl h-auto w-auto">
+          <div className="relative max-w-4xl h-full w-full">
             <Image src={currentImageSrc} fill alt="Zoom" className="w-full h-full object-contain" />
             <button
               onClick={(e) => {
