@@ -38,6 +38,7 @@ const Portfolio_dogs = () => {
       );
     }
   }, [isModalOpen]);
+  
   const closeModal = () => {
     gsap.fromTo(".modal",
       { scale: 1, opacity: 1, duration: 0.5 },
@@ -66,6 +67,11 @@ const Portfolio_dogs = () => {
     const prevIndex = (currentImageIndex - 1 + photos_dogs.length) % photos_dogs.length;
     setCurrentImageSrc(photos_dogs[prevIndex].src);
     setCurrentImageIndex(prevIndex);
+    gsap.fromTo(
+      ".modalBack",
+      { x:50,  duration: 2 },
+      { x:0 }
+    );
   };
 
   // Funkcja do przechodzenia do następnego zdjęcia
@@ -73,6 +79,11 @@ const Portfolio_dogs = () => {
     const nextIndex = (currentImageIndex + 1) % photos_dogs.length;
     setCurrentImageSrc(photos_dogs[nextIndex].src);
     setCurrentImageIndex(nextIndex);
+    gsap.fromTo(
+      ".modalBack",
+      { x:-50,  duration: 2 },
+      { x:0,  }
+    );
   };
 
   return (
@@ -90,7 +101,7 @@ const Portfolio_dogs = () => {
       {isModalOpen && (
         <div className="modalBlack fixed inset-0  bg-black/90 flex justify-center items-center z-50 py-16" onClick={closeModal}>
           <div className="relative h-full w-full modal">
-            <Image src={currentImageSrc} fill alt="Zoom" className="w-full h-full object-contain" />
+            <Image src={currentImageSrc} fill alt="Zoom" className="modalBack  w-full h-full object-contain" />
             <button
               onClick={(e) => {
                 e.stopPropagation();
