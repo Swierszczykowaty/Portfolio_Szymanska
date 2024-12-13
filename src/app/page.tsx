@@ -44,7 +44,7 @@ const Hero = () => {
       <div className="h-[100vh] relative">
         <div className='fixed top-0 z-50 flex items-center justify-center w-full py-10 bg-gradient-to-b from-black/80 '>
         <Link href="/">
-          <div className='navherotxt'>
+          <div className='navherotxt opacity-0'>
             <Image
               src="/logo/karina_logo_white.png"
               alt="logo"
@@ -55,7 +55,7 @@ const Hero = () => {
         </Link>
         </div>
         <div className="absolute w-full h-full flex items-end">
-          <div className='herotxt tracking-widest z-50 text-xl sm:text-2xl mb-44  text-white p-4 mx-6 sm:mx-10 md:mx-16 lg:mx-24 xl:mx-32 2xl:mx-72'>
+          <div className='herotxt opacity-0 tracking-widest z-50 text-xl sm:text-2xl mb-44  text-white p-4 mx-6 sm:mx-10 md:mx-16 lg:mx-24 xl:mx-32 2xl:mx-72'>
             <Link
               href="/portfolio_dogs"
               className={`block cursor-pointer p-4 `}

@@ -1,10 +1,11 @@
 'use client';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { PhotoAlbum } from "react-photo-album";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoMdClose } from "react-icons/io";
 import Image from 'next/image';
-
+import gsap from "gsap";
+import { useGSAP } from '@gsap/react';
 const photos_dogs = [
   { src: '/photos/dogs/1.webp', width: 600, height: 800, index:1 },
   { src: '/photos/dogs/4.webp', width: 800, height: 600, index:2 },
@@ -23,18 +24,41 @@ const Portfolio_dogs = () => {
   const [isModalOpen, setIsModalOpen] = useState(false); // Stan modala
   const [currentImageSrc, setCurrentImageSrc] = useState(''); // Źródło zdjęcia do wyświetlenia w modalu
   const [currentImageIndex, setCurrentImageIndex] = useState(0); // Indeks bieżącego zdjęcia w modalu
+  useEffect(() => {
+    if (isModalOpen) {
+      gsap.fromTo(
+        ".modal",
+        { scale: 0.8, opacity: 0 },
+        { scale: 1, opacity: 1, duration: 0.5 }
+      );
+      gsap.fromTo(
+        ".modalBlack",
+        { opacity: 0 },
+        { opacity: 1, duration: 0.5 }
+      );
+    }
+  }, [isModalOpen]);
+  const closeModal = () => {
+    gsap.fromTo(".modal",
+      { scale: 1, opacity: 1, duration: 0.5 },
+       {
+      scale: 0.8,
+      opacity: 0,
+      duration: 0.3,
+      onComplete: () => setIsModalOpen(false),
+    }
+  );
+  gsap.fromTo(
+    ".modalBlack",
+    { opacity: 1, duration: 0.5 },
+    { opacity: 0 }
+  );
+  };
 
-  // Funkcja do otwierania modala z klikniętym zdjęciem
   const openModal = (src: string, index: number) => {
     setCurrentImageSrc(src);
     setCurrentImageIndex(index);
     setIsModalOpen(true);
-  };
-
-  // Funkcja do zamykania modala
-  const closeModal = () => {
-    setIsModalOpen(false);
-    setCurrentImageSrc('');
   };
 
   // Funkcja do przechodzenia do poprzedniego zdjęcia
@@ -64,8 +88,8 @@ const Portfolio_dogs = () => {
       />
       {/* Modal z powiększonym zdjęciem */}
       {isModalOpen && (
-        <div className="fixed inset-0  bg-black/90 flex justify-center items-center z-50 py-16" onClick={closeModal}>
-          <div className="relative h-full w-full ">
+        <div className="modalBlack fixed inset-0  bg-black/90 flex justify-center items-center z-50 py-16" onClick={closeModal}>
+          <div className="relative h-full w-full modal">
             <Image src={currentImageSrc} fill alt="Zoom" className="w-full h-full object-contain" />
             <button
               onClick={(e) => {
