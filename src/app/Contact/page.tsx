@@ -10,36 +10,7 @@ import Contactphoto from '../../../public/photos/concert/1.webp'
 gsap.registerPlugin(useGSAP);
 
 const Contact = () => {
-  useGSAP(() => {
-    gsap.fromTo(
-      ".contactPhoto",
-      { opacity:0, x:-50 },
-      {
-        opacity:1,
-        x:0,
-        duration: 1.3,
-      }
-    );
-    gsap.fromTo(
-      ".contactTxt",
-      { opacity:0, x:50 },
-      {
-        opacity:1,
-        x:0,
-        duration: 1.3,
-      }
-    );
-    gsap.fromTo(
-      ".contactTxt2",
-      { opacity:0, y:-50 },
-      {
-        opacity:1,
-        y:0,
-        duration: 1.3,
-      }
-    );
-  },
-[]);
+
   return (
     <>
       <div className="w-full g-fuchsia-100 flex items-center flex-grow sm:h-[calc(100vh-445px)]">

@@ -11,6 +11,7 @@
   "dependencies": {
     "@gsap/react": "^2.1.1",
     "ajv": "^8.17.1",
+    "framer-motion": "^11.14.4",
     "gsap": "^3.12.5",
     "next": "^15.1.1-canary.4",
     "punycode": "^2.3.1",

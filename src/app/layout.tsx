@@ -3,11 +3,11 @@ import "./globals.css";
 import {Host_Grotesk} from 'next/font/google'
 
 const hostGrotesk = Host_Grotesk({
-  subsets: ['latin'], // Dodaj odpowiednie subsety
-  weight: ['300', '400', '500', '600', '700', '800'], // Wszystkie dostępne wagi
-  style: ['normal', 'italic'], // Jeśli italic jest obsługiwany
+  subsets: ['latin'], 
+  weight: ['300', '400', '500', '600', '700', '800'], 
+  style: ['normal', 'italic'], 
   display: 'swap',
-  variable: '--font-host-grotesk', // Użyj poprawnej zmiennej
+  variable: '--font-host-grotesk', 
 });
 
 export default function RootLayout({
