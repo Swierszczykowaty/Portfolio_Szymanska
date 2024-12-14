@@ -13,7 +13,7 @@ import hero4 from '../../public/photos/dogs/9.webp';
 import gsap from "gsap";
 import { useGSAP } from '@gsap/react';
 gsap.registerPlugin(useGSAP);
-
+import logo from '../../public/logo/karina_logo_white.png'
 
 const Hero = () => {
   useGSAP(() => {
@@ -42,14 +42,12 @@ const Hero = () => {
   return (
     <>
       <div className="h-[100vh] relative">
-        <div className='fixed top-0 z-50 flex items-center justify-center w-full py-10 bg-gradient-to-b from-black/80 '>
+        <div className='fixed top-0 z-50 flex items-center justify-center w-full bg-gradient-to-b from-black/80 '>
         <Link href="/">
-          <div className='navherotxt opacity-0'>
+          <div className='navherotxt flex items-center justify-center opacity-0 w-[250px] md:w-full h-44 md:h-64'>
             <Image
-              src="/logo/karina_logo_white.png"
+              src={logo}
               alt="logo"
-              width={280} 
-              height={40}
             />
           </div>
         </Link>

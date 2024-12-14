@@ -7,7 +7,6 @@ import { useGSAP } from '@gsap/react';
 import Aboutphoto from '../../../public/photos/concert/1.webp'
 
 gsap.registerPlugin(useGSAP);
-
 const About = () => {
   useGSAP(() => {
     gsap.fromTo(
