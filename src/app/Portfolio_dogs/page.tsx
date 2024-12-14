@@ -5,7 +5,6 @@ import { IoIosArrowDown } from "react-icons/io";
 import { IoMdClose } from "react-icons/io";
 import Image from 'next/image';
 import gsap from "gsap";
-import { motion } from 'framer-motion';
 
 const photos_dogs = [
   { src: '/photos/dogs/1.webp', width: 600, height: 800, index: 1 },
