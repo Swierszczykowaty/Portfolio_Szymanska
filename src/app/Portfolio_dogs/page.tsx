@@ -23,7 +23,6 @@ const Portfolio_dogs = () => {
   const [isModalOpen, setIsModalOpen] = useState(false); // Stan modala
   const [currentImageSrc, setCurrentImageSrc] = useState(''); // Źródło zdjęcia do wyświetlenia w modalu
   const [currentImageIndex, setCurrentImageIndex] = useState(0); // Indeks bieżącego zdjęcia w modalu
-  const [isGalleryLoaded, setIsGalleryLoaded] = useState(false); // Stan kontrolujący animację zdjęć w galerii
 
   useEffect(() => {
     // Animacja pojawiania się zdjęć w galerii
