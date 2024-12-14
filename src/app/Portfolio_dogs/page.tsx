@@ -84,12 +84,6 @@ const Portfolio_dogs = () => {
 
   return (
     <div className="h-full w-full pt-4">
-      <motion.div
-        className="photoAlbumContainer"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 0.3 }}
-      >
         <PhotoAlbum
           photos={photos_dogs}
           columns={(containerWidth) => {
@@ -99,8 +93,6 @@ const Portfolio_dogs = () => {
           layout="columns"
           onClick={({ photo, index }) => openModal(photo.src, index)}
         />
-      </motion.div>
-
       {/* Modal z powiększonym zdjęciem */}
       {isModalOpen && (
         <div className="modalBlack fixed inset-0 bg-black/90 flex justify-center items-center z-50 py-16" onClick={closeModal}>
