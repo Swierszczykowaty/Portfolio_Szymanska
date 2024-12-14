@@ -5,7 +5,8 @@ import { usePathname } from "next/navigation";
 import Image from 'next/image';
 import { useEffect } from 'react';
 import gsap from "gsap";
-export default function Nav() {
+
+const nav = () => {
   const pathname = usePathname();
   const isConcertPage = pathname === "/portfolio_concerts";
 
@@ -86,3 +87,4 @@ export default function Nav() {
     </nav>
   );
 }
+export default nav;

@@ -19,7 +19,7 @@ const photos_dogs = [
   { src: '/photos/dogs/9.webp', width: 800, height: 600, index: 9 },
 ];
 
-const Portfolio_dogs = () => {
+const portfolio_dogs = () => {
   const [isModalOpen, setIsModalOpen] = useState(false); // Stan modala
   const [currentImageSrc, setCurrentImageSrc] = useState(''); // Źródło zdjęcia do wyświetlenia w modalu
   const [currentImageIndex, setCurrentImageIndex] = useState(0); // Indeks bieżącego zdjęcia w modalu
@@ -134,4 +134,4 @@ const Portfolio_dogs = () => {
   );
 };
 
-export default Portfolio_dogs;
+export default portfolio_dogs;

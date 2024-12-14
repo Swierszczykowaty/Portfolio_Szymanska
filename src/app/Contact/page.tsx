@@ -8,7 +8,7 @@ import { useGSAP } from '@gsap/react';
 import Contactphoto from '../../../public/photos/concert/1.webp'
 gsap.registerPlugin(useGSAP);
 
-const Contact = () => {
+const contact = () => {
 
   return (
     <>
@@ -51,4 +51,4 @@ const Contact = () => {
   );
 }
 
-export default Contact;
+export default contact;

@@ -1,6 +1,6 @@
-import Footer from "@/Components/Footer";
+import Footer from "@/Components/footer";
 import Wrapper from "@/Components/Wrapper";
-import Nav from "@/Components/Nav";
+import Nav from "@/Components/nav";
 
 export default function RootLayout({
   children,

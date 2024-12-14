@@ -15,7 +15,7 @@ import { useGSAP } from '@gsap/react';
 gsap.registerPlugin(useGSAP);
 import logo from '../../public/logo/karina_logo_white.png'
 
-const Hero = () => {
+const hero = () => {
   useGSAP(() => {
       gsap.fromTo(
         ".herotxt",
@@ -127,4 +127,4 @@ const Hero = () => {
   );
 }
 
-export default Hero;
+export default hero;
