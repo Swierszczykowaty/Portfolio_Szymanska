@@ -7,7 +7,7 @@ import { useGSAP } from '@gsap/react';
 import Aboutphoto from '../../../public/photos/concert/1.webp'
 
 gsap.registerPlugin(useGSAP);
-const about = () => {
+const About = () => {
   useGSAP(() => {
     gsap.fromTo(
       ".aboutPhoto",
@@ -64,4 +64,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default About;

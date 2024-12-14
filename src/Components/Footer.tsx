@@ -3,7 +3,7 @@ import { FaInstagram } from "react-icons/fa6";
 import { FaSquareFacebook } from "react-icons/fa6";
 import { usePathname } from "next/navigation"; 
 
-const footer = () => {
+const Footer = () => {
       const pathname = usePathname();
       const isConcertPage = pathname === "/portfolio_concerts";
     return (
@@ -31,4 +31,4 @@ const footer = () => {
     );
 }
 
-export default footer;
+export default Footer;
