@@ -1,14 +1,43 @@
 'use client';
 import Image from 'next/image';
-import contactData from '../../../text/contact.json';
+import contactData from '@/database/contact.json';
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import gsap from "gsap";
 import { useGSAP } from '@gsap/react';
 gsap.registerPlugin(useGSAP);
 
-const contact = () => {
-
+const Contact = () => {
+  useGSAP(() => {
+    gsap.fromTo(
+      ".contactPhoto",
+      { opacity:0, x:-50 },
+      {
+        opacity:1,
+        x:0,
+        duration: 1.3,
+      }
+    );
+    gsap.fromTo(
+      ".contactTxt",
+      { opacity:0, x:50 },
+      {
+        opacity:1,
+        x:0,
+        duration: 1.3,
+      }
+    );
+    gsap.fromTo(
+      ".contactTxt2",
+      { opacity:0, y:-50 },
+      {
+        opacity:1,
+        y:0,
+        duration: 1.3,
+      }
+    );
+  },
+[]);
   return (
     <>
       <div className="w-full g-fuchsia-100 flex items-center flex-grow sm:h-[calc(100vh-445px)]">
@@ -50,4 +79,4 @@ const contact = () => {
   );
 }
 
-export default contact;
+export default Contact;

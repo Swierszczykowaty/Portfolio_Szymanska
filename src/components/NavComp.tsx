@@ -57,19 +57,19 @@ const Nav_comp = () => {
               } opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity pointer-events-none`}
             >
               <Link
-                href="/portfolio-dogs"
+                href="/portfolio/zwierzeta"
                 className={`flex w-28 px-4 py-2 ${isConcertPage ? 'text-white hover:bg-stone-800' : 'text-stone-900 hover:bg-gray-100'}  rounded-md`}
               >
                 Pieski
               </Link>
               <Link
-                href="/portfolio-people"
+                href="/portfolio/portrety"
                 className={`flex w-28 px-4 py-2 ${isConcertPage ? 'text-white hover:bg-stone-800' : 'text-stone-900 hover:bg-gray-100'}  rounded-md`}
               >
                 Ludzie
               </Link>
               <Link
-                href="/portfolio-concerts"
+                href="/portfolio/koncerty"
                 className={`flex w-28 px-4 py-2 ${isConcertPage ? 'text-white hover:bg-stone-800' : 'text-stone-900 hover:bg-gray-100'}  rounded-md`}
               >
                 Koncerty
