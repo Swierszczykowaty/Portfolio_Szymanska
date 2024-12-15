@@ -7,7 +7,7 @@ import gsap from "gsap";
 import { useGSAP } from '@gsap/react';
 gsap.registerPlugin(useGSAP);
 
-const contact = () => {
+const Contact = () => {
   useGSAP(() => {
     gsap.fromTo(
       ".contactPhoto",
@@ -79,4 +79,4 @@ const contact = () => {
   );
 }
 
-export default contact;
+export default Contact;

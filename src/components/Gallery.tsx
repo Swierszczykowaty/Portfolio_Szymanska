@@ -60,11 +60,12 @@ const Gallery = ({ images }: Props) => {
                     className="fixed inset-0 bg-black/80 flex justify-center items-center z-50" 
                     onClick={closeModal}
                 >
-                    <div className="relative p-10 h-full w-full">
-                        <img 
+                    <div className="relative h-full w-full">
+                        <Image 
                             src={currentImageSrc} 
                             alt="Zoom" 
                             className="w-full h-full object-contain" 
+                            fill
                         />
                     </div>
                     <button onClick={prevImage} className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white">
