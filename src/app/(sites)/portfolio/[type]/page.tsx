@@ -1,6 +1,5 @@
+import Gallery from "@/components/Gallery"
 import portfolio from "@/database/portfolio.json"
-import Image from "next/image"
-import Link from "next/link"
 
 type Params = {
     params: {
@@ -16,15 +15,7 @@ const Page = async ({params}:Params) => {
     return (
         <>
             <h1>{data?.name}</h1>
-            <div className="flex flex-col">
-                {data?.images.map((i, index) => (
-                    <Link key={index} className="relative h-[200px]" href={`/?photoId=${data.id}-${index}`}
-                    as={`/p/${data.id}-${index}`}
-                    shallow>
-                        <Image className="object-cover" src={i} alt="a" fill/>
-                    </Link>
-                ))}
-            </div>
+            <Gallery images={data?.images ?? []}/>
         </>
     );
 }
