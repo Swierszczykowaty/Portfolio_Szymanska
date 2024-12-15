@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${hostGrotesk.variable}`}>
+    <html lang="pl" className={`${hostGrotesk.variable}`}>
       <body className="font-sans">
         <main>{children}</main>
       </body>

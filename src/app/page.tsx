@@ -55,7 +55,7 @@ const Hero = () => {
         <div className="absolute w-full h-full flex items-end">
           <div className='herotxt opacity-0 tracking-widest z-50 text-xl sm:text-2xl mb-44  text-white p-4 mx-6 sm:mx-10 md:mx-16 lg:mx-24 xl:mx-32 2xl:mx-72'>
             <Link
-              href="/portfolio_dogs"
+              href="/portfolio-dogs"
               className={`block cursor-pointer p-4 `}
             >
               <div className='flex herotxt items-center gap-4 '>
@@ -63,7 +63,7 @@ const Hero = () => {
               </div>
             </Link>
             <Link
-              href="/portfolio_people"
+              href="/portfolio-people"
               className={`block cursor-pointer p-4 `}
             >
               <div className='flex herotxt items-center gap-4'>
@@ -71,7 +71,7 @@ const Hero = () => {
               </div>
             </Link>
             <Link
-              href="/portfolio_concerts"
+              href="/portfolio-concerts"
               className={`block cursor-pointer p-4 `}
             >
               <div className='flex herotxt items-center gap-4'>

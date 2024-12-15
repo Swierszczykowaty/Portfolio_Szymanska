@@ -1,11 +1,10 @@
 'use client';
 import Image from 'next/image';
-import contactData from '../../text/contact.json';
+import contactData from '../../../text/contact.json';
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import gsap from "gsap";
 import { useGSAP } from '@gsap/react';
-import Contactphoto from '../../../public/photos/concert/1.webp'
 gsap.registerPlugin(useGSAP);
 
 const contact = () => {
@@ -14,12 +13,12 @@ const contact = () => {
     <>
       <div className="w-full g-fuchsia-100 flex items-center flex-grow sm:h-[calc(100vh-445px)]">
         <div className='flex flex-col w-full h-full gap-8'>
-          <div className='contactPhoto w-full h-[150px] md:h-[200px]'>
+          <div className='relative contactPhoto w-full h-[150px] md:h-[200px]'>
             <Image
-              className="h-full w-full object-cover bg-center"
-              src={Contactphoto}
+              className="h-full w-full object-cover"
+              src="/photos/concert/1.webp"
               alt="Me"
-              placeholder="blur"
+              fill
             />
           </div>
           <div className="contactTxt text-black flex flex-col">

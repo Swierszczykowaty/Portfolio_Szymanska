@@ -1,10 +1,8 @@
 'use client';
-
 import Image from 'next/image';
-import aboutData from '../../text/about.json';
+import aboutData from '@/text/about.json';
 import gsap from "gsap";
 import { useGSAP } from '@gsap/react';
-import Aboutphoto from '../../../public/photos/concert/1.webp'
 
 gsap.registerPlugin(useGSAP);
 const About = () => {
@@ -37,12 +35,12 @@ const About = () => {
            xl:h-[calc(100vh-445px)]"
       >
       <div className="flex xl:flex-row flex-col gap-12 xl:gap-16 items-center">
-        <div className="h-[400px] aboutPhoto w-full xl:w-2/5 xl:h-[450px]">
+        <div className="relative h-[400px] aboutPhoto w-full xl:w-2/5 xl:h-[450px]">
           <Image
             className="h-full w-full object-cover"
-            src={Aboutphoto}
+            src="/photos/concert/1.webp"
             alt="Thatsme"
-            placeholder="blur"
+            fill
           />
         </div>
         <div className="text-black flex flex-col aboutTxt xl:w-3/5 ">

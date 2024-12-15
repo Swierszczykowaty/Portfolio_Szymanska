@@ -8,7 +8,7 @@ import gsap from "gsap";
 
 const Nav_comp = () => {
   const pathname = usePathname();
-  const isConcertPage = pathname === "/portfolio_concerts";
+  const isConcertPage = pathname === "/portfolio-concerts";
 
   useEffect(() => {
     gsap.fromTo(
@@ -57,19 +57,19 @@ const Nav_comp = () => {
               } opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity pointer-events-none`}
             >
               <Link
-                href="/portfolio_dogs"
+                href="/portfolio-dogs"
                 className={`flex w-28 px-4 py-2 ${isConcertPage ? 'text-white hover:bg-stone-800' : 'text-stone-900 hover:bg-gray-100'}  rounded-md`}
               >
                 Pieski
               </Link>
               <Link
-                href="/portfolio_people"
+                href="/portfolio-people"
                 className={`flex w-28 px-4 py-2 ${isConcertPage ? 'text-white hover:bg-stone-800' : 'text-stone-900 hover:bg-gray-100'}  rounded-md`}
               >
                 Ludzie
               </Link>
               <Link
-                href="/portfolio_concerts"
+                href="/portfolio-concerts"
                 className={`flex w-28 px-4 py-2 ${isConcertPage ? 'text-white hover:bg-stone-800' : 'text-stone-900 hover:bg-gray-100'}  rounded-md`}
               >
                 Koncerty
