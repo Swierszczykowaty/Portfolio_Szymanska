@@ -1,0 +1,22 @@
+[
+    {
+        "id":1,
+        "name":"Fotografia zwierzęca",
+        "urlName":"zwierzeta",
+        "images":[
+            "/photos/dogs/5.webp",
+            "/photos/dogs/6.webp",
+            "/photos/dogs/7.webp",
+            "/photos/dogs/8.webp"
+        ]
+    },
+    {
+        "id":2,
+        "name":"Fotografia koncertowa",
+        "urlName":"koncerty",
+        "images":[
+            "/photos/concert/1.webp"
+        ]
+    }
+    
+]

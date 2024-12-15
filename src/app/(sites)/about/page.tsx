@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import aboutData from '@/text/about.json';
+import aboutData from '@/database/about.json';
 import gsap from "gsap";
 import { useGSAP } from '@gsap/react';
 

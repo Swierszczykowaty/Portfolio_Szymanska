@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import contactData from '../../../text/contact.json';
+import contactData from '@/database/contact.json';
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import gsap from "gsap";
