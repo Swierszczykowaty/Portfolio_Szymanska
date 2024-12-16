@@ -8,7 +8,7 @@ import gsap from "gsap";
 
 const Nav_comp = () => {
   const pathname = usePathname();
-  const isConcertPage = pathname === "/portfolio-concerts";
+  const isConcertPage = pathname === "/portfolio/koncerty";
 
   useEffect(() => {
     gsap.fromTo(

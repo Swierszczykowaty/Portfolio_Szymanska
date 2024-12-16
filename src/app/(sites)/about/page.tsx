@@ -3,6 +3,7 @@ import Image from 'next/image';
 import aboutData from '@/database/about.json';
 import gsap from "gsap";
 import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(useGSAP);
 const About = () => {
@@ -39,8 +40,9 @@ const About = () => {
           <Image
             className="h-full w-full object-cover"
             src="/photos/concert/1.webp"
-            alt="Thatsme"
+            alt="AboutPhoto"
             fill
+            draggable={false}
           />
         </div>
         <div className="text-black flex flex-col aboutTxt xl:w-3/5 ">

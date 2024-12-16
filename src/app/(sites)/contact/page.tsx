@@ -41,13 +41,14 @@ const Contact = () => {
   return (
     <>
       <div className="w-full g-fuchsia-100 flex items-center flex-grow sm:h-[calc(100vh-445px)]">
-        <div className='flex flex-col w-full h-full gap-8'>
+        <div className='flex flex-col w-full h-full gap-8 justify-center'>
           <div className='relative contactPhoto w-full h-[150px] md:h-[200px]'>
             <Image
               className="h-full w-full object-cover"
               src="/photos/concert/1.webp"
-              alt="Me"
+              alt="ContactPhoto"
               fill
+              draggable={false}
             />
           </div>
           <div className="contactTxt text-black flex flex-col">
