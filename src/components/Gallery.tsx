@@ -4,8 +4,12 @@ import { useState, useEffect, useRef } from 'react';
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { IoMdClose } from "react-icons/io";
 import Image from 'next/image';
-import gsap from 'gsap';
+import gsap from "gsap";
+import { useGSAP } from '@gsap/react';
 import { usePathname } from "next/navigation"; 
+import { Scada } from 'next/font/google';
+import { MdOpacity } from 'react-icons/md';
+gsap.registerPlugin(useGSAP);
 
 type Props = {
     images: string[];
@@ -34,16 +38,42 @@ const Gallery = ({ images, name }: Props) => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
-    const openModal = (src: string, index: number) => {
-        setCurrentImageSrc(src);
+    const openModal = (photo: string, index: number) => {
+        setCurrentImageSrc(photo);
         setCurrentImageIndex(index);
-        setIsModalOpen(true);
+        setIsModalOpen(true); // Modal becomes visible
     };
+    
+    useEffect(() => {
+        if (isModalOpen) {
+            gsap.fromTo(
+                ".modal",
+                { scale: 0.8, },
+                { scale: 1, duration: 0.6, ease: "power2.out" }
+            );
+            gsap.fromTo(
+                ".bgmodal",
+                { opacity: 0 },
+                { opacity: 1, duration: 0.8, ease: "power2.out" }
+            )
+        }
+    }, [isModalOpen]);
 
     const closeModal = () => {
-        setIsModalOpen(false);
-        setCurrentImageSrc('');
-    };
+        gsap.to(".modal",
+          {
+          scale: 0.9,
+          opacity:0,
+          duration: 0.6,
+          ease: "power2.in",
+          onComplete: () => setIsModalOpen(false),
+        });
+        gsap.fromTo(
+            ".bgmodal",
+            { opacity: 1 },
+            { opacity: 0, duration: 0.6 }
+        )
+      };
 
     const prevImage = (e: React.MouseEvent) => {
         e.stopPropagation();
@@ -58,13 +88,26 @@ const Gallery = ({ images, name }: Props) => {
         setCurrentImageSrc(images[nextIndex]);
         setCurrentImageIndex(nextIndex);
     };
+    useGSAP(() => {
+        gsap.fromTo(
+          ".galerry",
+          { opacity:0, y:50 },
+          {
+            opacity:1,
+            y:0,
+            duration: 1.3,
+            stagger: 0.02,
+          }
+        );
+      },
+    []);
 
     return (
         <>  
-        <h1 className={`mb-6 md:mb-10 md:mt-4 text-black text-[20px] md:text-[22px] italic ${isConcertPage ? 'text-white' : 'text-stone-900'}`}>{name}</h1>
-            <div className="columns-2 md:columns-3 gap-2 md:gap-4 h-full w-full">
+        {/* <h1 className={`mb-6 md:mb-10 md:mt-4 text-black text-[20px] font-medium md:text-[26px] italic ${isConcertPage ? 'text-white' : 'text-stone-900'}`}>{name}</h1> */}
+            <div className=" columns-2 md:columns-3 gap-2 md:gap-4 h-full w-full">
                 {images.map((photo, index) => (
-                    <div key={index} className="relative cursor-pointer mb-2 md:mb-4 w-full h-auto bg-blue-500 break-inside-auto" onClick={() => openModal(photo, index)}>
+                    <div key={index} className="relative galerry cursor-pointer mb-2 md:mb-4 w-full h-auto break-inside-auto" onClick={() => openModal(photo, index)}>
                         <Image
                             src={photo}
                             alt={`Image ${index}`}
@@ -73,16 +116,17 @@ const Gallery = ({ images, name }: Props) => {
                             sizes="(max-width: 768px) 100vw, 300px"
                             style={{ width: '100%', height: 'auto' }}
                             draggable={false}
+                            className='galerry'
                         />
                     </div>
                 ))}
             </div>
             {isModalOpen && (
                 <div 
-                    className="fixed inset-0 bg-black/80 flex justify-center items-center z-50" 
+                    className=" fixed bgmodal inset-0 md:p-10 bg-black/90 flex justify-center items-center z-50" 
                     onClick={closeModal}
                 >
-                    <div className="relative h-full w-full">
+                    <div className="relative h-full modal w-full">
                         <Image 
                             src={currentImageSrc} 
                             alt="Zoom" 

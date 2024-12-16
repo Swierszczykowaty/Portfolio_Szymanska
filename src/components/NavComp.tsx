@@ -37,18 +37,18 @@ const Nav_comp = () => {
             />
           </div>
         </Link>
-        <div className="flex  pt-8 gap-10 md:gap-16 2xl:gap-[80px] text-nowrap">
+        <div className={`flex  pt-8 duration-300 gap-10 md:gap-16 2xl:gap-[80px] text-nowrap`}>
           <Link
             href="/about"
-            className={`cursor-pointer p-2 ${isConcertPage ? 'text-white' : 'text-stone-900'}`}
+            className={`cursor-pointer p-2 ${isConcertPage ? 'text-white' : 'text-stone-900 hover:text-stone-500 duration-300'}`}
           >
             <h1>O mnie</h1>
           </Link>
-          <div className="relative group p-2">
+          <div className={`relative group p-2 ${isConcertPage ? 'text-white' : 'text-stone-900 duration-300'}`}>
             <div className="flex items-center">
-              <h1 className={`cursor-pointer ${isConcertPage ? 'text-white' : 'text-stone-900'}`}>Portfolio</h1>
+              <h1 className={`cursor-pointer `}>Portfolio</h1>
               <IoIosArrowDown
-                className={`ml-2 group-hover:rotate-180 duration-300 ${isConcertPage ? 'text-white' : 'text-stone-900'}`}
+                className={`ml-2 group-hover:rotate-180 duration-300}`}
               />
             </div>
             <div
@@ -58,19 +58,19 @@ const Nav_comp = () => {
             >
               <Link
                 href="/portfolio/zwierzeta"
-                className={`flex w-28 px-4 py-2 ${isConcertPage ? 'text-white hover:bg-stone-800' : 'text-stone-900 hover:bg-gray-100'}  rounded-md`}
+                className={`flex w-28 px-4 py-2 ${isConcertPage ? 'text-white hover:bg-stone-800 ' : 'text-stone-900 hover:bg-gray-100 hover:text-stone-600'}  rounded-md`}
               >
                 Pieski
               </Link>
               <Link
                 href="/portfolio/portrety"
-                className={`flex w-28 px-4 py-2 ${isConcertPage ? 'text-white hover:bg-stone-800' : 'text-stone-900 hover:bg-gray-100'}  rounded-md`}
+                className={`flex w-28 px-4 py-2 ${isConcertPage ? 'text-white hover:bg-stone-800' : 'text-stone-900 hover:bg-gray-100 hover:text-stone-600'}  rounded-md`}
               >
                 Ludzie
               </Link>
               <Link
                 href="/portfolio/koncerty"
-                className={`flex w-28 px-4 py-2 ${isConcertPage ? 'text-white hover:bg-stone-800' : 'text-stone-900 hover:bg-gray-100'}  rounded-md`}
+                className={`flex w-28 px-4 py-2 ${isConcertPage ? 'text-white hover:bg-stone-800' : 'text-stone-900 hover:bg-gray-100 hover:text-stone-600'}  rounded-md`}
               >
                 Koncerty
               </Link>
@@ -78,7 +78,7 @@ const Nav_comp = () => {
           </div>
           <Link
             href="/contact"
-            className={`cursor-pointer p-2 ${isConcertPage ? 'text-white' : 'text-stone-900'}`}
+            className={`cursor-pointer p-2 ${isConcertPage ? 'text-white' : 'text-stone-900 hover:text-stone-500 duration-300'}`}
           >
             <h1>Kontakt</h1>
           </Link>
