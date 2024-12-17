@@ -3,7 +3,6 @@ import Image from 'next/image';
 import aboutData from '@/database/about.json';
 import gsap from "gsap";
 import { useGSAP } from '@gsap/react';
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(useGSAP);
 const About = () => {
