@@ -25,8 +25,8 @@ const Nav_comp = () => {
 []);
 
   return (
-    <nav className="sticky w-full z-50">
-      <div className="flex flex-col p-10 items-center justify-center text-stone-900">
+    <nav className="sticky w-full z-50 ">
+      <div className="flex flex-col p-10 mb-4 items-center justify-center text-stone-900">
         <Link href="/">
           <div>
             <Image
@@ -40,45 +40,45 @@ const Nav_comp = () => {
         <div className={`flex  pt-8 duration-300 gap-10 md:gap-16 2xl:gap-[80px] text-nowrap`}>
           <Link
             href="/about"
-            className={`cursor-pointer p-2 ${isConcertPage ? 'text-white' : 'text-stone-900 hover:text-stone-500 duration-300'}`}
+            className={`cursor-pointer p-4 ${isConcertPage ? 'text-white' : 'text-stone-900 hover:text-stone-500 duration-300'}`}
           >
             <h1>O mnie</h1>
           </Link>
-          <div className={`relative group p-2 ${isConcertPage ? 'text-white' : 'text-stone-900 duration-300'}`}>
+          <div className={`relative group p-4 ${isConcertPage ? 'text-white' : 'text-stone-900 duration-300'}`}>
             <div className="flex flex-row items-center">
-              <h1 className={`cursor-pointer `}>Portfolio</h1>
+              <h1 className={`cursor-default `}>Portfolio</h1>
               <IoIosArrowDown
                 className={`ml-2 group-hover:rotate-180 duration-300`}
               />
             </div>
             <div
-              className={`absolute left-1/2 transform duration-300 -translate-x-1/2 top-full  ${
+              className={`absolute left-1/2 flex transform duration-300 -translate-y-3 -translate-x-1/2 top-full ${
                 isConcertPage ? 'bg-stone-900 shadow-custom-light' : 'bg-white shadow-custom-dark'
-              } opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity pointer-events-none`}
+              } opacity-0 group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all pointer-events-none`}
             >
               <Link
                 href="/portfolio/zwierzeta"
-                className={`flex w-28 px-4 py-2 ${isConcertPage ? 'text-white hover:bg-stone-800 ' : 'text-stone-900 hover:bg-gray-100 hover:text-stone-600'}  `}
+                className={`flex justify-center w-28 px-4 py-2 ${isConcertPage ? 'text-white hover:bg-stone-800 ' : 'text-stone-900 hover:bg-gray-100 hover:text-stone-600'}  `}
               >
                 Pieski
               </Link>
               <Link
-                href="/portfolio/portrety"
-                className={`flex w-28 px-4 py-2 ${isConcertPage ? 'text-white hover:bg-stone-800' : 'text-stone-900 hover:bg-gray-100 hover:text-stone-600'} `}
-              >
-                Ludzie
-              </Link>
-              <Link
                 href="/portfolio/koncerty"
-                className={`flex w-28 px-4 py-2 ${isConcertPage ? 'text-white hover:bg-stone-800' : 'text-stone-900 hover:bg-gray-100 hover:text-stone-600'}  `}
+                className={`flex justify-center w-28 px-4 py-2 ${isConcertPage ? 'text-white hover:bg-stone-800' : 'text-stone-900 hover:bg-gray-100 hover:text-stone-600'}  `}
               >
                 Koncerty
+              </Link>
+              <Link
+                href="/portfolio/portrety"
+                className={`flex justify-center w-28 px-4 py-2 ${isConcertPage ? 'text-white hover:bg-stone-800' : 'text-stone-900 hover:bg-gray-100 hover:text-stone-600'} `}
+              >
+                Ludzie
               </Link>
             </div>
           </div>
           <Link
             href="/contact"
-            className={`cursor-pointer p-2 ${isConcertPage ? 'text-white' : 'text-stone-900 hover:text-stone-500 duration-300'}`}
+            className={`cursor-pointer p-4 ${isConcertPage ? 'text-white' : 'text-stone-900 hover:text-stone-500 duration-300'}`}
           >
             <h1>Kontakt</h1>
           </Link>

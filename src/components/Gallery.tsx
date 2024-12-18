@@ -108,23 +108,23 @@ const Gallery = ({ images, name }: Props) => {
         {/* <h1 className={`mb-6 md:mb-10 md:mt-4 text-black text-[20px] font-medium md:text-[26px] italic ${isConcertPage ? 'text-white' : 'text-stone-900'}`}>{name}</h1> */}
             <div className=" columns-2 md:columns-3 gap-2 md:gap-4 h-full w-full">
                 {images.map((photo, index) => (
-                    <>
-                        <div key={index} className="relative galerry cursor-pointer mb-2 md:mb-4 w-full h-auto break-inside-auto" onClick={() => openModal(photo, index)}>
-                            <Image
-                                src={photo}
-                                alt={`Image ${index}`}
-                                width={300}
-                                height={0}
-                                sizes="(max-width: 768px) 100vw, 300px"
-                                style={{ width: '100%', height: 'auto' }}
-                                draggable={false}
-                                className='galerry'
-                            />
-                            <div className='flex items-center justify-center absolute top-0 h-full w-full duration-300 group hover:bg-black/30 z-50'>
+                    <div key={index} className="relative galerry cursor-pointer mb-2 md:mb-4 w-full h-auto break-inside-auto" onClick={() => openModal(photo, index)}>
+                        <Image
+                            src={photo}
+                            alt={`Image ${index}`}
+                            width={300}
+                            height={0}
+                            sizes="(max-width: 768px) 100vw, 300px"
+                            style={{ width: '100%', height: 'auto' }}
+                            draggable={false}
+                            className='galerry'
+                        />
+                        <div className='w-full h-full galerry  absolute top-0'>
+                            <div className='flex items-center justify-center h-full w-full duration-300 group hover:bg-black/30 z-50'>
                                 <FaMagnifyingGlass className='h-6 w-6 text-white absolute md:group-hover:opacity-100 opacity-0  duration-300'/>
                             </div>
                         </div>
-                    </>
+                    </div>
                 ))}
             </div>
             {isModalOpen && (
