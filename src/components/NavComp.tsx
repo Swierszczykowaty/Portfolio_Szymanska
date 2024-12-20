@@ -28,23 +28,24 @@ const Nav_comp = () => {
     <nav className="sticky w-full z-50 ">
       <div className="flex flex-col p-10 mb-4 items-center justify-center text-stone-900">
         <Link href="/">
-          <div>
+          <div className="z-50 relative w-[350px] h-[70px]">
             <Image
-              src={isConcertPage ? "/logo/karina_logo_white.png" : "/logo/karina_logo.png"}
-              alt="logo"
-              width={280} 
-              height={40}
-            />
+                src={isConcertPage ? "/logo/karina_logo_white.png" : "/logo/karina_logo.png"}
+                alt="logo"
+                fill
+                className="w-full h-full object-cover"
+                draggable="false"
+              />
           </div>
         </Link>
-        <div className={`flex  pt-8 duration-300 gap-10 md:gap-16 2xl:gap-[80px] text-nowrap`}>
+        <div className={`flex pt-8 duration-300  text-nowrap`}>
           <Link
             href="/about"
             className={`cursor-pointer p-4 ${isConcertPage ? 'text-white' : 'text-stone-900 hover:text-stone-500 duration-300'}`}
           >
             <h1>O mnie</h1>
           </Link>
-          <div className={`relative group p-4 ${isConcertPage ? 'text-white' : 'text-stone-900 duration-300'}`}>
+          <div className={`relative group py-4 px-8 sm:px-10 md:px-16 2xl:px-[80px] ${isConcertPage ? 'text-white' : 'text-stone-900 duration-300'}`}>
             <div className="flex flex-row items-center">
               <h1 className={`cursor-default `}>Portfolio</h1>
               <IoIosArrowDown
