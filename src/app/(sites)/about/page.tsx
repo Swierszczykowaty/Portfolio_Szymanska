@@ -32,7 +32,7 @@ const About = () => {
       <div
         className="
           w-full flex items-center flex-grow
-           xl:h-[calc(100vh-445px)]"
+           xl:h-[calc(100vh-486px)]"
       >
       <div className="flex xl:flex-row flex-col gap-12 xl:gap-16 items-center">
         <div className="relative h-[400px] aboutPhoto w-full xl:w-2/5 xl:h-[450px]">
