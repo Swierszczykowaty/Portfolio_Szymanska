@@ -39,8 +39,9 @@ const About = () => {
           <Image
             className="h-full w-full object-cover"
             src="/photos/concert/1.webp"
-            alt="Thatsme"
+            alt="AboutPhoto"
             fill
+            draggable={false}
           />
         </div>
         <div className="text-black flex flex-col aboutTxt xl:w-3/5 ">
