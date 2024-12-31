@@ -14,8 +14,8 @@ const Page = async ({ params }:Params) => {
 
     return (
         <>
-            <h1>{data?.name}</h1>
-            <Gallery images={data?.images ?? []} />
+            {/* <h1 className="">{data?.name}</h1> */}
+            <Gallery images={data?.images ?? []} name={data?.name ? [data.name] : []} />
         </>
     );
 };

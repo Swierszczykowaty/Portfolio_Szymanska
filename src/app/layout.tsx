@@ -18,6 +18,11 @@ export default function RootLayout({
   return (
     <html lang="pl" className={`${hostGrotesk.variable}`}>
       <body className="font-sans">
+      <title>Karina Szymańska - Portfolio</title>
+        <meta
+          name="description"
+          content="Portfolio z moimi pracami fotograficznymi. Karina Szymańska"
+        />
         <main>{children}</main>
       </body>
     </html>
