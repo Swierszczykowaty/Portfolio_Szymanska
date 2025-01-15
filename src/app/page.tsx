@@ -121,6 +121,10 @@ const Hero = () => {
             <Image src="/photos/hero/IMG_007.jpg" className="relative object-cover h-full w-full" alt="hero" fill />
             <div className='bg-black/25 w-full h-full absolute z-40'></div>
           </SwiperSlide>
+          <SwiperSlide>
+            <Image src="/photos/hero/IMG_51.jpeg" className="relative object-cover h-full w-full" alt="hero" fill />
+            <div className='bg-black/25 w-full h-full absolute z-40'></div>
+          </SwiperSlide>
         </Swiper>
       </div>
     </>

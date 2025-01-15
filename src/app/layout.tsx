@@ -17,14 +17,19 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pl" className={`${hostGrotesk.variable}`}>
-      <body className="font-sans">
-      <title>Karina Szymańska - Portfolio</title>
+      <head>
+        <title>Karina Szymańska Fotografia</title>
         <meta
           name="description"
           content="Portfolio z moimi pracami fotograficznymi. Karina Szymańska"
         />
+        <link rel="icon" href="/logo/fav_icon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+      </head>
+      <body className="font-sans">
         <main>{children}</main>
       </body>
     </html>
   );
 }
+

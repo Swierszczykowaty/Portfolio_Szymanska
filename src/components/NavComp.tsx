@@ -26,13 +26,14 @@ const Nav_comp = () => {
 
   return (
     <nav className="sticky w-full z-50 ">
-      <div className="flex flex-col p-10 mb-4 items-center justify-center text-stone-900">
+      <div className="flex flex-col p-10 mb-4 items-center justify-center text-stone-900 ">
         <Link href="/">
-          <div className="z-50 relative w-[350px] h-[70px]">
+          <div className="z-50 relative w-full h-full">
             <Image
                 src={isConcertPage ? "/logo/karina_logo_white.png" : "/logo/karina_logo.png"}
                 alt="logo"
-                fill
+                width={350}
+                height={46}
                 className="w-full h-full object-cover"
                 draggable="false"
               />
