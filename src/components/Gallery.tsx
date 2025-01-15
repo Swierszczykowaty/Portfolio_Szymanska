@@ -136,6 +136,7 @@ const Gallery = ({ images, name }: Props) => {
                         <Image 
                             src={currentImageSrc} 
                             alt="Zoom" 
+                            sizes="(max-width: 1000px) 100vw, 1500px"
                             className="w-full h-full object-contain" 
                             fill
                         />

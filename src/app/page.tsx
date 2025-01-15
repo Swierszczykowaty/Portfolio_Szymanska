@@ -55,7 +55,7 @@ const Hero = () => {
               className={`block cursor-pointer p-4 `}
             >
               <div className='flex herotxt items-center gap-4 '>
-                <h1 className='hover:translate-x-1 duration-300 hover:font-medium transition-all'>Portfolio Zwierzeta</h1>
+                <h1 className='hover:translate-x-1 duration-300 hover:font-medium transition-all'>Portfolio Psy</h1>
               </div>
             </Link>
             <Link

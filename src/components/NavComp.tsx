@@ -62,7 +62,7 @@ const Nav_comp = () => {
                 href="/portfolio/zwierzeta"
                 className={`flex justify-center w-28 px-4 py-2 ${isConcertPage ? 'text-white hover:bg-stone-800 ' : 'text-stone-900 hover:bg-gray-100 hover:text-stone-600'}  `}
               >
-                Pieski
+                Psy
               </Link>
               <Link
                 href="/portfolio/koncerty"
