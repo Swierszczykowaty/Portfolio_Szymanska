@@ -6,10 +6,6 @@ import 'swiper/css/effect-fade';
 import 'swiper/css/pagination';
 import Link from "next/link";
 import Image from 'next/image';
-import hero1 from '../../public/photos/concert/1.webp';
-import hero2 from '../../public/photos/dogs/8.webp';
-import hero3 from '../../public/photos/dogs/7.webp';
-import hero4 from '../../public/photos/dogs/9.webp';
 import gsap from "gsap";
 import { useGSAP } from '@gsap/react';
 gsap.registerPlugin(useGSAP);
@@ -106,20 +102,24 @@ const Hero = () => {
           className="h-full w-full "
         >
           <SwiperSlide>
-            <Image src={hero1} className="relative object-cover h-full w-full" alt="hero" fill/>
-            <div className='bg-black/20 w-full h-full absolute z-40'></div>
+            <Image src="/photos/hero/IMG_008.jpg" className="relative object-cover h-full w-full" alt="hero" fill/>
+            <div className='bg-black/25 w-full h-full absolute z-40'></div>
           </SwiperSlide>
           <SwiperSlide>
-            <Image src={hero2} className="relative object-cover h-full w-full" alt="hero" fill />
-            <div className='bg-black/20 w-full h-full absolute z-40'></div>          
+            <Image src="/photos/hero/IMG_039.jpg" className="relative object-cover h-full w-full" alt="hero" fill />
+            <div className='bg-black/25 w-full h-full absolute z-40'></div>
           </SwiperSlide>
           <SwiperSlide>
-            <Image src={hero3} className="relative object-cover h-full w-full" alt="hero" fill />
-            <div className='bg-black/20 w-full h-full absolute z-40'></div>
+            <Image src="/photos/hero/IMG_050.jpg" className="relative object-cover h-full w-full" alt="hero" fill />
+            <div className='bg-black/25 w-full h-full absolute z-40'></div>
           </SwiperSlide>
           <SwiperSlide>
-            <Image src={hero4} className="relative object-cover h-full w-full" alt="hero" fill />
-            <div className='bg-black/20 w-full h-full absolute z-40'></div>
+            <Image src="/photos/hero/IMG_047.jpg" className="relative object-cover h-full w-full" alt="hero" fill />
+            <div className='bg-black/25 w-full h-full absolute z-40'></div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image src="/photos/hero/IMG_007.jpg" className="relative object-cover h-full w-full" alt="hero" fill />
+            <div className='bg-black/25 w-full h-full absolute z-40'></div>
           </SwiperSlide>
         </Swiper>
       </div>

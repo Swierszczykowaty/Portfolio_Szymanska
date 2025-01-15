@@ -38,7 +38,7 @@ const About = () => {
         <div className="relative h-[400px] aboutPhoto w-full xl:w-2/5 xl:h-[450px]">
           <Image
             className="h-full w-full object-cover"
-            src="/photos/concert/1.webp"
+            src="/photos/about/IMG_400.jpg"
             alt="AboutPhoto"
             fill
             draggable={false}

@@ -40,12 +40,12 @@ const Contact = () => {
 []);
   return (
     <>
-      <div className="w-full g-fuchsia-100 flex items-center flex-grow sm:h-[calc(100vh-445px)]">
+      <div className="w-full g-fuchsia-100 flex items-center flex-grow sm:h-[calc(100vh-486px)]">
         <div className='flex flex-col w-full h-full gap-8 justify-center'>
           <div className='relative contactPhoto w-full h-[150px] md:h-[200px]'>
             <Image
               className="h-full w-full object-cover"
-              src="/photos/concert/1.webp"
+              src="/photos/dogs/IMG_005.jpg"
               alt="ContactPhoto"
               fill
               draggable={false}
@@ -64,13 +64,13 @@ const Contact = () => {
             <div className="contactTxt2 flex items-center justify-center p-2 ">
               <FaPhoneAlt className="w-6 h-6 sm:w-8 sm:h-8 "/>
               <p className="text-xl sm:text-2xl ml-4">
-                342 234 234
+              {contactData.number}
               </p>
             </div>
             <div className="contactTxt2 flex items-center  justify-center p-2 ">
               <MdEmail className="w-8 h-8 sm:w-10 sm:h-10 "/>
               <p className="text-xl sm:text ml-4 ">
-                karina@szymanksa.pl
+              {contactData.mail}
               </p>
             </div>
           </div>
