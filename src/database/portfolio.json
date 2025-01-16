@@ -8,6 +8,7 @@
             "/photos/dogs/IMG_003.jpg",
             "/photos/dogs/IMG_004.jpg",
             "/photos/dogs/IMG_005.jpg",
+            "/photos/dogs/IMG_000.jpg",
             "/photos/dogs/IMG_006.jpg",
             "/photos/dogs/IMG_007.jpg",
             "/photos/dogs/IMG_008.jpg",
@@ -99,7 +100,10 @@
             "/photos/concert/IMG_134.jpg",
             "/photos/concert/IMG_135.jpg",
             "/photos/concert/IMG_136.jpg",
-            "/photos/concert/IMG_137.jpg"
+            "/photos/concert/IMG_137.jpg",
+            "/photos/concert/IMG_100.jpg"
+
+
         ]
     },
     {
@@ -107,6 +111,7 @@
         "name": "Fotografia portretowa",
         "urlName": "portrety",
         "images": [
+            "/photos/people/IMG_200.jpg",
             "/photos/people/IMG_201.jpg",
             "/photos/people/IMG_202.jpg",
             "/photos/people/IMG_203.jpg",

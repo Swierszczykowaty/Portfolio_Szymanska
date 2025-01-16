@@ -40,7 +40,7 @@ const Contact = () => {
 []);
   return (
     <>
-      <div className="w-full g-fuchsia-100 flex items-center flex-grow sm:h-[calc(100vh-486px)]">
+      <div className="w-full g-fuchsia-100 flex items-center flex-grow 2xl:h-[calc(100vh-486px)]">
         <div className='flex flex-col w-full h-full gap-8 justify-center'>
           <div className='relative contactPhoto w-full h-[150px] md:h-[200px]'>
             <Image

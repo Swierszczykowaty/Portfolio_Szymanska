@@ -106,15 +106,15 @@ const Hero = () => {
             <div className='bg-black/25 w-full h-full absolute z-40'></div>
           </SwiperSlide>
           <SwiperSlide>
-            <Image src="/photos/hero/IMG_039.jpg" className="relative object-cover h-full w-full" alt="hero" fill />
-            <div className='bg-black/25 w-full h-full absolute z-40'></div>
-          </SwiperSlide>
-          <SwiperSlide>
             <Image src="/photos/hero/IMG_050.jpg" className="relative object-cover h-full w-full" alt="hero" fill />
             <div className='bg-black/25 w-full h-full absolute z-40'></div>
           </SwiperSlide>
           <SwiperSlide>
             <Image src="/photos/hero/IMG_047.jpg" className="relative object-cover h-full w-full" alt="hero" fill />
+            <div className='bg-black/25 w-full h-full absolute z-40'></div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image src="/photos/hero/IMG_039.jpg" className="relative object-cover h-full w-full" alt="hero" fill />
             <div className='bg-black/25 w-full h-full absolute z-40'></div>
           </SwiperSlide>
           <SwiperSlide>
